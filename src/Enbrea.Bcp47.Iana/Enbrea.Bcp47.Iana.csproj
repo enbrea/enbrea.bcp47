@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <Product>Enbrea.Bcp47.Iana</Product>
+    <Description>IANA Language Subtag Registry support for Enbrea.Bcp47.</Description>
+    <Authors>STÜBER SYSTEMS GmbH</Authors>
+    <Company>STÜBER SYSTEMS GmbH</Company>
+    <Copyright>© 2026 STÜBER SYSTEMS GmbH</Copyright>
+    <Version>0.1.0</Version>
+    <LangVersion>latest</LangVersion>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>enbrea;bcp47;rfc5646;rfc4647;language-tag;iana;registry;localization;internationalization;i18n;dotnet</PackageTags>
+    <RepositoryUrl>https://github.com/enbrea/enbrea.bcp47</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\$(TargetFramework)\Generated</CompilerGeneratedFilesOutputPath>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Enbrea.Bcp47\Enbrea.Bcp47.csproj" />
+    <ProjectReference Include="..\Enbrea.Bcp47.Iana.SourceGenerator\Enbrea.Bcp47.Iana.SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Build-time input for IanaLanguageSubtagRegistryGenerator; not embedded into the runtime assembly. -->
+    <AdditionalFiles Include="Assets\language-subtag-registry.json" />
+  </ItemGroup>
+
+</Project>

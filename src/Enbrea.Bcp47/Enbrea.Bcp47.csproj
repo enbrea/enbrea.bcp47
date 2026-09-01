@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <Product>Enbrea.Bcp47</Product>
+    <Description>A .NET implementation of IETF BCP 47 for parsing, validating, inspecting, normalizing, and matching language tags and language ranges.</Description>
+    <Authors>STÜBER SYSTEMS GmbH</Authors>
+    <Company>STÜBER SYSTEMS GmbH</Company>
+    <Copyright>© 2026 STÜBER SYSTEMS GmbH</Copyright>
+    <Version>0.1.0</Version>
+    <LangVersion>latest</LangVersion>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>enbrea;bcp47;rfc5646;rfc4647;language-tag;language-range;localization;internationalization;i18n;dotnet</PackageTags>
+    <RepositoryUrl>https://github.com/enbrea/enbrea.bcp47</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="src/Enbrea.Bcp47/Enbrea.Bcp47.csproj" />
+  <Project Path="src/Enbrea.Bcp47.Iana.SourceGenerator/Enbrea.Bcp47.Iana.SourceGenerator.csproj" />
+  <Project Path="src/Enbrea.Bcp47.Iana/Enbrea.Bcp47.Iana.csproj" />
+  <Project Path="test/xunit/Enbrea.Bcp47.XUnit.csproj" />
+</Solution>
