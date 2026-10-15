@@ -108,7 +108,7 @@ public class IanaLanguageSubtagRegistryTests
     [Fact]
     public void FileDate_ReturnsGeneratedRegistryDate()
     {
-        Assert.Equal(new DateOnly(2026, 8, 8), IanaLanguageSubtagRegistry.FileDate);
+        Assert.Equal(new DateOnly(2026, 9, 17), IanaLanguageSubtagRegistry.FileDate);
     }
     
     [Fact]

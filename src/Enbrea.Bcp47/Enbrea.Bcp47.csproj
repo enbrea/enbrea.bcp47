@@ -14,6 +14,7 @@
     <PackageTags>enbrea;bcp47;rfc5646;rfc4647;language-tag;language-range;localization;internationalization;i18n;dotnet</PackageTags>
     <RepositoryUrl>https://github.com/enbrea/enbrea.bcp47</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 

@@ -1,5 +1,5 @@
 {
-  "fileDate": "2026-08-08",
+  "fileDate": "2026-09-17",
   "source": "https://www.iana.org/assignments/language-subtag-registry",
   "records": [
     {
@@ -74561,6 +74561,7 @@
       "type": "region",
       "subtag": "NR",
       "descriptions": [
+        "Naoero",
         "Nauru"
       ],
       "added": "2005-10-16"
